@@ -1,21 +1,13 @@
-set	autoindent
-set	tabstop=4
-set	shiftwidth=4
-set	number
-syntax	on
-
 call plug#begin()
 
-Plug	'tribela/vim-transparent'
 Plug	'42Paris/42header'
 Plug	'vim-airline/vim-airline'
 Plug	'vim-airline/vim-airline-themes'
-Plug	'pacokwon/onedarkhc.vim'
+Plug	'dracula/vim'
 
 call plug#end()
 
-" Onedark
-colorscheme onedarkhc
+colorscheme dracula
 
 " 42 Header
 let g:user42 = 'nfararan'
@@ -28,6 +20,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '>'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline_powerline_fonts = 1
 
 if (empty($TMUX))
   if (has("nvim"))
@@ -38,3 +31,9 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
+
+set	autoindent
+set	tabstop=4
+set	shiftwidth=4
+set	number
+syntax	on
