@@ -11,7 +11,7 @@ colorscheme dracula
 
 " 42 Header
 let g:user42 = 'nfararan'
-let g:mail42 = 'marvin@student.42.fr'
+let g:mail42 = 'marvin@42.fr'
 
 " Vim airline
 let g:airline#extensions#tabline#enabled = 1
