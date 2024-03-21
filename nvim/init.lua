@@ -12,3 +12,6 @@ vim.g.mapleader = " "
 
 -- Plugin config files
 require('config').load()
+
+-- Keymaps
+require('keymaps').load()
